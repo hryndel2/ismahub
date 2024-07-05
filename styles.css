@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9; /* light gray background */
+}
+
+header {
+  background-color: #333; /* dark gray background */
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff; /* white text */
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* dark gray background */
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #fff; /* white text */
+  margin: 0 10px;
+}
+
+.home-button {
+  margin-left: 20px;
+}
+
+.add-button {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+.profile-button {
+  margin-right: 20px;
+}

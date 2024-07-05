@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Clone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            overflow: hidden; /* Add this to remove scrolling */
+        }
+       .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+       .top-nav button {
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+       .top-nav button:hover {
+            background-color: #f0f0f0;
+        }
+       .video-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       .actions {
+            position: fixed;
+            bottom: 70px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+       .actions img.avatar {
+            width: 50px; /* Increase avatar size to 50px */
+            height: 50px; /* Increase avatar size to 50px */
+            margin-right: 40px; /* Keep the margin to move avatar to the right */
+        }
+       .actions button {
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 20px; /* Add margin to separate buttons */
+        }
+       .actions button:hover {
+            background-color: #f0f0f0;
+        }
+       .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+       .bottom-nav button {
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+       .bottom-nav button:hover {
+            background-color: #f0f0f0;
+        }
+       .add-button {
+            font-size: 36px;
+            padding: 10px 20px;
+            background-color: black;
+            color: black;
+        }
+       .add-button:hover {
+            background-color: #black;
+            color: #black;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <button>Поиск</button>
+        <button>Главная</button>
+    </div>
+    <div class="video-container">
+        <video class="video" src="" loop autoplay muted playsinline></video>
+    </div>
+    <div class="actions">
+        <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM06rJx1AZuF2JfCTGoYlxFtO8AhYpGAca21iVSpVBsTuwxSbDO4aqA4L4ldsL2irPfI&usqp=CAU" alt="Avatar">
+        <button>❤</button>
+        <button>➜</button>
+        <button>☸</button>
+    </div>
+    <div class="bottom-nav">
+        <button>🏠</button>
+        <button class="add-button">➕</button>
+        <button>👤</button>
+    </div>
+    <script>
+        // Add event listeners to the buttons
+        document.querySelectorAll('.top-nav button').forEach(button => {
+            button.addEventListener('click', () => {
+                console.log('Top nav button clicked');
+            });
+        });
+        document.querySelectorAll('.actions button').forEach(button => {
+            button.addEventListener('click', () => {
+                console.log('Actions button clicked');
+            });
+        });
+        document.querySelectorAll('.bottom-nav button').forEach(button => {
+            button.addEventListener('click', () => {
+                console.log('Bottom nav button clicked');
+            });
+        });
+    </script>
+</body>
+</html>
